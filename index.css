@@ -33,6 +33,7 @@ body {
   display: flex;
   gap: 0.75rem;
 }
+
 .navbar h2 i {
   display: inline-block;
 }
@@ -69,7 +70,6 @@ nav button:active {
   transition: 300ms;
 }
 
-/* Hamburger toggle button — hidden on laptop/desktop, shown at <=992px */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -94,13 +94,14 @@ nav button:active {
   transition: transform 250ms ease, opacity 250ms ease;
 }
 
-/* Turns into an X when nav is open */
 .navbar.nav-open .hamburger span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
+
 .navbar.nav-open .hamburger span:nth-child(2) {
   opacity: 0;
 }
+
 .navbar.nav-open .hamburger span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
@@ -153,17 +154,26 @@ nav button:active {
   margin-left: 2rem;
   margin-top: 2rem;
   border: none;
-  
 }
 
 .companies {
   display: flex;
-  gap: 9rem;
   justify-content: space-evenly;
   align-items: center;
+  gap: clamp(1.5rem, 5vw, 5rem);
   padding: 2rem;
   position: relative;
   bottom: 14rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.companies img {
+  width: clamp(70px, 10vw, 130px);
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
+  opacity: 0.7;
 }
 
 .page2 {
@@ -174,24 +184,30 @@ nav button:active {
 .line {
   color: black;
   display: flex;
+  flex-wrap: nowrap;
   gap: 4rem;
   padding: 3rem;
   justify-content: start;
   align-items: center;
   overflow-y: hidden;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .line h3 {
-  font-size: 3rem;
+  font-size: clamp(1.1rem, 2.8vw, 3rem);
   top: 0rem;
   background-color: #b7e4c7;
   height: fit-content;
   border-radius: 5px;
   padding: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .line p {
-  font-size: 1.5rem;
+  font-size: clamp(0.85rem, 1.6vw, 1.5rem);
+  white-space: nowrap;
 }
 
 .container {
@@ -241,6 +257,7 @@ nav button:active {
   text-align: center;
   padding: 0 2.5rem;
 }
+
 .box1 p {
   font-size: 1.6rem;
   padding: 10px;
@@ -250,6 +267,7 @@ nav button:active {
   font-size: 1.5rem;
   margin-left: 10px;
 }
+
 .inner1 {
   display: flex;
   flex-direction: column;
@@ -270,18 +288,18 @@ nav button:active {
   left: 18rem;
 }
 
-.imgcontainer2 img{
+.imgcontainer2 img {
   width: 50%;
   height: 100%;
   object-fit: contain;
 }
 
-.imgcontainer3{
+.imgcontainer3 {
   height: 100px;
   width: 100px;
 }
 
-.imgcontainer3 img{
+.imgcontainer3 img {
   object-fit: contain;
 }
 
@@ -312,6 +330,7 @@ nav button:active {
   font-size: 3.5rem;
   margin: 0.5rem;
 }
+
 .graybox p {
   font-size: 1.5rem;
   margin: 0.5rem;
@@ -333,7 +352,6 @@ nav button:active {
   border-radius: 6px;
   border: none;
   margin: 0.5rem;
-  white-space: nowrap;
 }
 
 .page4 {
@@ -344,24 +362,30 @@ nav button:active {
 .line2 {
   color: black;
   display: flex;
+  flex-wrap: nowrap;
   gap: 4rem;
   padding: 3rem;
   justify-content: start;
   align-items: center;
   overflow-y: hidden;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .line2 h3 {
-  font-size: 3rem;
+  font-size: clamp(1.1rem, 2.8vw, 3rem);
   background-color: #b7e4c7;
-  width: 60%;
+  width: fit-content;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .line2 p {
-  font-size: 1.5rem;
+  font-size: clamp(0.85rem, 1.6vw, 1.5rem);
+  white-space: nowrap;
 }
 
 .graybox2 {
@@ -422,25 +446,31 @@ nav button:active {
 .line3 {
   color: black;
   display: flex;
+  flex-wrap: nowrap;
   gap: 4rem;
   padding: 3rem;
   justify-content: start;
   align-items: center;
   margin-top: 4rem;
   overflow-y: hidden;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .line3 h3 {
-  font-size: 3rem;
+  font-size: clamp(1.1rem, 2.8vw, 3rem);
   background-color: #b7e4c7;
-  width: 60%;
+  width: fit-content;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .line3 p {
-  font-size: 1.5rem;
+  font-size: clamp(0.85rem, 1.6vw, 1.5rem);
+  white-space: nowrap;
 }
 
 .page5 {
@@ -463,6 +493,7 @@ nav button:active {
 .line4 {
   color: black;
   display: flex;
+  flex-wrap: nowrap;
   gap: 4rem;
   padding: 3rem;
   justify-content: start;
@@ -470,19 +501,24 @@ nav button:active {
   position: relative;
   bottom: 2rem;
   overflow-y: hidden;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .line4 h3 {
-  font-size: 3rem;
+  font-size: clamp(1.1rem, 2.8vw, 3rem);
   background-color: #b7e4c7;
-  width: 50%;
+  width: fit-content;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .line4 p {
-  font-size: 1.5rem;
+  font-size: clamp(0.85rem, 1.6vw, 1.5rem);
+  white-space: nowrap;
 }
 
 .A1 {
@@ -535,7 +571,6 @@ nav button:active {
   justify-content: center;
   padding: 4rem;
   gap: 3rem;
-  align-items: center;
   overflow-y: hidden;
   margin-top: 1.5rem;
 }
@@ -584,6 +619,7 @@ nav button:active {
 .line5 {
   color: black;
   display: flex;
+  flex-wrap: nowrap;
   gap: 12rem;
   padding: 3rem;
   justify-content: start;
@@ -591,19 +627,24 @@ nav button:active {
   position: relative;
   top: 1rem;
   overflow-y: hidden;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .line5 h3 {
-  font-size: 3rem;
+  font-size: clamp(1.1rem, 2.8vw, 3rem);
   background-color: #b7e4c7;
-  width: 50%;
+  width: fit-content;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .line5 p {
-  font-size: 1.5rem;
+  font-size: clamp(0.85rem, 1.6vw, 1.5rem);
+  white-space: nowrap;
 }
 
 .page7 {
@@ -613,7 +654,6 @@ nav button:active {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
 }
 
 .contactus {
@@ -624,7 +664,7 @@ nav button:active {
   margin-top: 2rem;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem ;
+  padding: 5rem;
   overflow: hidden;
   border-radius: 2rem;
 }
@@ -756,7 +796,6 @@ nav button:active {
   outline: none;
   font-size: 20px;
   font-weight: 500;
-  border: none;
 }
 
 .footerinfo2 button {
@@ -824,6 +863,7 @@ nav button:active {
   color: black;
   width: 95%;
   display: flex;
+  flex-wrap: nowrap;
   gap: 12rem;
   padding: 3rem;
   justify-content: start;
@@ -833,31 +873,27 @@ nav button:active {
   background-color: black;
   border-radius: 15px;
   overflow-y: hidden;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .line6 h3 {
-  font-size: 3rem;
+  font-size: clamp(1.1rem, 2.8vw, 3rem);
   background-color: #b7e4c7;
   width: fit-content;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .line6 p {
-  font-size: 1.5rem;
+  font-size: clamp(0.85rem, 1.6vw, 1.5rem);
   color: #fff;
+  white-space: nowrap;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN
-   Everything above this line (including the 1200px "laptop" query) is left
-   exactly as in the original file — untouched. Only the tablet-portrait,
-   mobile, and small-mobile breakpoints below have been reworked to fix
-   layout/overflow issues that showed up on smaller screens.
-   ========================================================================== */
-
-/* ---------- Laptops / small desktops (UNCHANGED from original) ---------- */
 @media (max-width: 1200px) {
   body {
     padding: 0 3rem;
@@ -870,7 +906,6 @@ nav button:active {
   nav {
     gap: 1.5rem;
   }
-  
 
   nav h3 {
     font-size: 16px;
@@ -890,12 +925,17 @@ nav button:active {
   }
 
   .companies {
-    gap: 4rem;
-    bottom: 8rem;
+    gap: 3rem;
+    bottom: 5rem;
+    margin-bottom: 10rem;
+    flex-wrap: nowrap;
   }
 
   .companies img {
+    width: clamp(55px, 7vw, 90px);
     max-width: 90px;
+    max-height: 40px;
+    flex-shrink: 0;
   }
 
   .imgcontainer2 {
@@ -907,8 +947,10 @@ nav button:active {
     padding: 3rem;
   }
 
-  .text2, .text3,
-  .text5, .text6 {
+  .text2,
+  .text3,
+  .text5,
+  .text6 {
     padding-left: 3rem;
   }
 
@@ -921,9 +963,9 @@ nav button:active {
   }
 }
 
-/* ---------- Tablets (landscape) — improved ---------- */
 @media (max-width: 992px) {
-  html, body {
+  html,
+  body {
     height: auto;
   }
 
@@ -987,8 +1029,8 @@ nav button:active {
   .main button {
     margin-left: 0;
     display: block;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   .half2 {
@@ -1005,10 +1047,23 @@ nav button:active {
   }
 
   .companies {
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-wrap: nowrap;
+    gap: 3rem; /* <--- Increased this gap property */
     bottom: 0;
     position: static;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: center;
+    padding: 1.5rem 0.5rem;
+    width: 100%;
+  }
+
+  .companies img {
+    width: clamp(55px, 8vw, 75px);
+    max-width: 75px;
+    max-height: 35px;
+    height: auto;
+    flex: 0 0 auto;
   }
 
   .container {
@@ -1052,17 +1107,14 @@ nav button:active {
     width: 60%;
   }
 
-  .line, .line2, .line3, .line4, .line5, .line6 {
-    flex-wrap: wrap;
+  .line,
+  .line2,
+  .line3,
+  .line4,
+  .line5,
+  .line6 {
     gap: 1.5rem;
     padding: 2rem;
-  }
-
-  .line2 h3,
-  .line3 h3,
-  .line4 h3,
-  .line5 h3 {
-    width: 100%;
   }
 
   .line6 {
@@ -1078,7 +1130,8 @@ nav button:active {
     gap: 2rem;
   }
 
-  .text2, .text3 {
+  .text2,
+  .text3 {
     border-left: none;
     border-top: 2px solid white;
     padding-left: 0;
@@ -1116,7 +1169,8 @@ nav button:active {
     gap: 2.5rem;
   }
 
-  .text5, .text6 {
+  .text5,
+  .text6 {
     border-left: none;
     border-top: 2px solid white;
     padding-left: 0;
@@ -1184,8 +1238,6 @@ nav button:active {
     text-align: center;
   }
 
-  /* Phone/address repeat what's already in the contact form above —
-     keep just the email so the footer stays compact */
   #xii,
   #xiii {
     display: none;
@@ -1207,7 +1259,6 @@ nav button:active {
   }
 }
 
-/* ---------- Tablets (portrait) — improved ---------- */
 @media (max-width: 768px) {
   body {
     padding: 0 1.25rem;
@@ -1223,24 +1274,6 @@ nav button:active {
 
   .half1 p {
     font-size: 18px;
-  }
-
-  .line h3,
-  .line2 h3,
-  .line3 h3,
-  .line4 h3,
-  .line5 h3,
-  .line6 h3 {
-    font-size: 2rem;
-  }
-
-  .line p,
-  .line2 p,
-  .line3 p,
-  .line4 p,
-  .line5 p,
-  .line6 p {
-    font-size: 1.1rem;
   }
 
   .box1 h3 {
@@ -1259,8 +1292,12 @@ nav button:active {
     font-size: 1.1rem;
   }
 
-  .text1 h2, .text2 h2, .text3 h2,
-  .text4 h2, .text5 h2, .text6 h2 {
+  .text1 h2,
+  .text2 h2,
+  .text3 h2,
+  .text4 h2,
+  .text5 h2,
+  .text6 h2 {
     font-size: 1.2rem;
   }
 
@@ -1311,9 +1348,19 @@ nav button:active {
   .line6 {
     gap: 1.5rem;
   }
+
+  .companies {
+    gap: 1rem;
+    padding: 1.25rem 0.25rem;
+  }
+
+  .companies img {
+    width: clamp(50px, 10vw, 70px);
+    max-width: 70px;
+    max-height: 32px;
+  }
 }
 
-/* ---------- Mobile — improved ---------- */
 @media (max-width: 576px) {
   body {
     padding: 0 1rem;
@@ -1348,8 +1395,25 @@ nav button:active {
     width: 100%;
   }
 
+  .companies {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 1rem 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+  }
+
   .companies img {
-    max-width: 60px;
+    width: clamp(38px, 13vw, 58px);
+    max-width: 58px;
+    max-height: 28px;
+    height: auto;
+    flex: 1 1 0;
+    min-width: 0;
+    object-fit: contain;
   }
 
   .container {
@@ -1378,18 +1442,13 @@ nav button:active {
     width: 100%;
   }
 
-  .line, .line2, .line3, .line4, .line5, .line6 {
+  .line,
+  .line2,
+  .line3,
+  .line4,
+  .line5,
+  .line6 {
     padding: 1.25rem;
-  }
-
-  .line h3,
-  .line2 h3,
-  .line3 h3,
-  .line4 h3,
-  .line5 h3,
-  .line6 h3 {
-    font-size: 1.5rem;
-    width: 100%;
   }
 
   .A1 {
@@ -1487,7 +1546,6 @@ nav button:active {
   }
 }
 
-/* ---------- Small mobile — improved ---------- */
 @media (max-width: 400px) {
   .navbar h2 {
     font-size: 1.4rem;
@@ -1499,15 +1557,6 @@ nav button:active {
 
   .box1 h3 {
     font-size: 1.5rem;
-  }
-
-  .line h3,
-  .line2 h3,
-  .line3 h3,
-  .line4 h3,
-  .line5 h3,
-  .line6 h3 {
-    font-size: 1.25rem;
   }
 
   .footerinfo h4 {
@@ -1544,5 +1593,15 @@ nav button:active {
 
   .contactimg img {
     max-height: 160px;
+  }
+
+  .companies {
+    gap: 0.25rem;
+  }
+
+  .companies img {
+    width: clamp(35px, 12vw, 52px);
+    max-width: 52px;
+    max-height: 25px;
   }
 }
