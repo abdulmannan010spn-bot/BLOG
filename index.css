@@ -153,6 +153,7 @@ nav button:active {
   margin-left: 2rem;
   margin-top: 2rem;
   border: none;
+  
 }
 
 .companies {
@@ -327,11 +328,12 @@ nav button:active {
   background-color: black;
   padding: 20px;
   color: #fff;
-  width: 26%;
+  width: 32%;
   font-size: 1.1rem;
   border-radius: 6px;
   border: none;
   margin: 0.5rem;
+  white-space: nowrap;
 }
 
 .page4 {
@@ -827,7 +829,7 @@ nav button:active {
   justify-content: start;
   align-items: center;
   position: relative;
-  top: 6.5rem;
+  margin-top: 6.5rem;
   background-color: black;
   border-radius: 15px;
   overflow-y: hidden;
@@ -1065,7 +1067,6 @@ nav button:active {
 
   .line6 {
     width: 100%;
-    top: 0;
     margin-top: 2rem;
   }
 
@@ -1545,5 +1546,3 @@ nav button:active {
     max-height: 160px;
   }
 }
-
-
