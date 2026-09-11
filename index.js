@@ -106,7 +106,7 @@ function page2animation() {
     {
       x: -100,
       opacity: 0,
-      duration: 1.5,
+      duration: 1,
       ease: "sine.out",
     },
     "anim1",
@@ -117,7 +117,7 @@ function page2animation() {
     {
       x: 100,
       opacity: 0,
-      duration: 1.5,
+      duration: 1,
       ease: "sine.out",
     },
     "anim1",
@@ -128,7 +128,7 @@ function page2animation() {
     {
       x: -100,
       opacity: 0,
-      duration: 1.5,
+      duration: 1,
       ease: "sine.out",
     },
     "anim2",
@@ -139,7 +139,7 @@ function page2animation() {
     {
       x: 100,
       opacity: 0,
-      duration: 1.5,
+      duration: 1,
       ease: "sine.out",
     },
     "anim2",
@@ -150,7 +150,7 @@ function page2animation() {
     {
       x: -100,
       opacity: 0,
-      duration: 1.5,
+      duration: 1,
       ease: "sine.out",
     },
     "anim3",
@@ -161,7 +161,7 @@ function page2animation() {
     {
       x: 100,
       opacity: 0,
-      duration: 1.5,
+      duration: 1,
       ease: "sine.out",
     },
     "anim3",
