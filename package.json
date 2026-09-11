@@ -1,0 +1,22 @@
+{
+  "name": "blog-writing-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo Build completed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulmannan010spn-bot/BLOG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/abdulmannan010spn-bot/BLOG/issues"
+  },
+  "homepage": "https://github.com/abdulmannan010spn-bot/BLOG#readme"
+}
